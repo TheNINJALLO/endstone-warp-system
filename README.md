@@ -20,8 +20,9 @@
 </p>
 
 <p align="center">
-  <a href="#overview">Overview</a> &bull;
-  <a href="#compatibility">Compatibility</a> &bull;
+  <a href="#what-it-does">What it does</a> &bull;
+  <a href="#how-to-use">How to use</a> &bull;
+  <a href="#commands-and-permissions">Commands</a> &bull;
   <a href="#install">Install</a> &bull;
   <a href="https://github.com/TheNINJALLO/endstone-warp-system/releases">Releases</a>
 </p>
@@ -30,9 +31,22 @@
 
 A comprehensive warp system plugin for Endstone/Minecraft Bedrock. This release is aligned with Endstone 0.11.8 and Minecraft Bedrock Dedicated Server 1.26.40, and is distributed as a Python wheel for direct installation in an Endstone server.
 
-## Capabilities
+## What it does
 
--
+- Provides form-based personal warps with tiered slot counts and persistent JSON storage.
+- Includes fixed public destinations, per-player edit/delete cooldowns, and administrator browsing/reset tools.
+- Opens from configured custom rope items rather than a slash command.
+
+## How to use
+
+1. Grant one of `warp.warp1`, `warp.warp2`, or `warp.warp3` and provide the matching `ninjos:rope1`, `ninjos:rope2`, or `ninjos:rope3` item.
+2. The player uses the rope item, chooses **Add New Warp**, and saves a name, dimension, and coordinates.
+3. Open the same item again to teleport, edit, or delete; normal edits/deletes use the configured cooldown.
+4. Grant `warp.admin` or `warp.owner` only to staff who need unlimited slots, cooldown reset, or all-player warp browsing.
+
+## Commands and permissions
+
+This plugin registers no slash commands. Players open the warp UI by using the configured rope item while holding the matching `warp.warp1`, `warp.warp2`, or `warp.warp3` permission.
 
 ## Compatibility
 
