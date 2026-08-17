@@ -1,10 +1,10 @@
 """
-Endstone Warp System Plugin - Compatible with Endstone 0.11.8+
+Endstone Warp System Plugin - Compatible with Endstone 0.11.9+
 A complete warp management system for Minecraft Bedrock Edition
 
 Author: Your Name
-Version: 1.0.0
-API Version: 0.5
+Version: 1.2.4
+API Version: 0.11
 """
 
 from endstone.plugin import Plugin
@@ -65,7 +65,7 @@ class WarpSystemPlugin(Plugin):
         # Register event listeners
         self.register_events(self)
 
-        self.logger.info(f"{ColorFormat.GREEN}Warp System Plugin v1.2.2 enabled!")
+        self.logger.info(f"{ColorFormat.GREEN}Warp System Plugin v1.2.4 enabled!")
 
     def on_disable(self) -> None:
         """Called when the plugin is disabled"""
